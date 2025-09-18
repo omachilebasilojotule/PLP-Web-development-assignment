@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="view"
+        content="width=device-width, initial-scale=1.0"/>
+        <title>Gadget Showcase & Registeration form</title>
+        <style>
+            body{font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #f4f4f4;
+                line-height: 1.6;
+            }
+            table{width: 100%;
+                border-collapse:collapse;
+                margin-bottom: 20PX;
+                background: #fff;
+            }
+            th, td {
+                border: 1px solid #ccc;
+                padding: 10px; text-align: center;
+            }
+            th { background-color: #333;
+                color: #fff;
+            } 
+            form {background: #fff;
+                padding: 20px;
+                border-radius: 5px;
+            }
+            fieldset {margin-bottom: 15px;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+            legend{ font-weight: bold;
+            }
+            label{ display: block; margin-top: 10px;}
+            input, select, textarea {width: 100%; padding: 8px; margin-top: 4px;}
+            img { width: 200px; margin-right: 10px;}
+            
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Gadget Hub</h1>
+            <p>Explore our best-selling gadgets, accessories, and register for updates!</p>
+        </header>
+        <section>
+            <h2>Top 3 Must-Have Gadgets</h2>
+            <ul>
+                <li>Smartphones With Long Battery Life</li>
+                <li>Wireless Earbuds With Noise-cncellation</li>
+                <li>Multi-port Fast Chargers</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Product Comparison</h2>
+            <table>
+                <tr>
+                    <th>PRODUCT</th>
+                    <th>BATTERY LIFE</th>
+                    <th>PRICE</th>
+                </tr>
+                <tr>
+                    <td>Phone A</td>
+                    <td>18hrs</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Phone B</td>
+                    <td>24hrs</td>
+                    <td>$300</td>
+                </tr>
+            </table>
+        </section>
+
+        <sectin>
+            <h2>Media Preview</h2>
+            <img src="https://via.placeholder.com/200" alt="Smartphone with bezel-less screen"/>
+            <img src="https://via.placeholder.com/200" alt="Wireless Earbuds in charging case"/>
+        </sectin>
+
+        <article>
+            <h2>Register for Updates</h2>
+            <form action="#"
+            method="post"
+            autocomplete="on"
+            <fieldset>
+                <legend>Personal information</legend>
+                <labe for="Fname">first name</labe>
+                <input type="text"
+                id="fname" name="Fname"
+                placeholder="john" required minlength="2">
+                <label for="Lname">Last Name</label>
+                <input type="text" id="Lname" name="Lname"
+                placeholder="Doe" required>
+                <label for="email">Email</label>
+                <input type="email"
+                id="email" name="email"
+                placeholder="example@gmail.com" required>
+                <label for="Phone">Phone (10 digits)*</label>
+                <input type="tel" id="phone"
+                name="phone" pattern="[0-9] {10}"
+                placeholder="e.g. 0812345678" required>
+            </fieldset>
+            <fieldset>
+                <legend>Device Preferences</legend>
+                <label for="Device">Choose a Gadget</label>
+                <select id="Device"
+                name="Device" required>
+                <option value="">--select--</option>
+                <option value="Phone">Smartphone</option>
+                <option value="Earbuds">Wireless Earbuds</option>
+                <option value="Charger">Fastcharger</option>
+                </select>
+                <label for="Comments">Any special Requests?</label>
+                <textarea id="Comments"
+                name="Comments" rows="4"
+                placeholder="Type your message..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username*</label>
+                <input type="text" id="Username" 
+                name="Username" required
+                minlength="5" placeholder="e.g. User123">
+                <label for="password">Password*</label>
+                <input type="password" id="password"
+                name="password" required
+                minlength="6" placeholder="min 6 characters">
+                <label for="Readonly-info">Referral Code</label>
+                <input type="text" id="Readonly-info"
+                name="Referral"
+                value="GADGET100" readonly>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+        </article>
+
+        <footer>
+            <p>&copy;2025 Gadget Hub. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
